@@ -3,15 +3,22 @@
 using namespace std;
 int main()
 {
-  int numFemale, numMale, numOthers;
+  int numFemale, numMale, numOthers, total;
   double percF, percM, percO;
 
   cout << "Enter the number of students: Male, Female and Others";
   cin >> numMale >> numFemale >> numOthers;
+  total = numMale + numFemale + numOthers;
   // TODO
+
+  percM = (numMale / (double)total) * 100;
+  percF = (numFemale / (double)total) * 100;
+  percO = (numOthers / (double)total) * 100;
 
   cout << setprecision(2) << fixed;
   cout << "Percentage of Male: " << percM << endl;
   cout << "Percentage of Female: " << percF << endl;
   cout << "Percentage of Others: " << percO << endl;
 }
+
+// messed up declarations and had a / at the end of my code
